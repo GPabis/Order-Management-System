@@ -1,4 +1,4 @@
-package com.example.ordermanagementsystem.Entity;
+package com.ordermanagementsystem.Entity;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

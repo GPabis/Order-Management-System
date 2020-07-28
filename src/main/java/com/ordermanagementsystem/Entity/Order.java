@@ -1,8 +1,7 @@
-package com.example.ordermanagementsystem.Entity;
+package com.ordermanagementsystem.Entity;
 
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.Objects;
 
 @Entity
@@ -30,10 +29,6 @@ public class Order {
 
     public Long getOrderId() {
         return orderId;
-    }
-
-    public void setOrderId(Long orderId) {
-        this.orderId = orderId;
     }
 
     public String getOrderName() {
@@ -67,18 +62,14 @@ public class Order {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (!(o instanceof Order)) return false;
         Order order = (Order) o;
-        return Objects.equals(orderId, order.orderId) &&
-               Objects.equals(orderName, order.orderName) &&
-               Objects.equals(customerName, order.customerName) &&
-               Objects.equals(customerSurname, order.customerSurname) &&
-               Objects.equals(orderDate, order.orderDate);
+        return Objects.equals(orderId, order.orderId);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(orderId, orderName, customerName, customerSurname, orderDate);
+        return Objects.hash(orderId);
     }
 
     @Override

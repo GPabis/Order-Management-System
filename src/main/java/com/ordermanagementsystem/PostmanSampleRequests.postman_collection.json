@@ -7,79 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "http://localhost:8080/orders/delete/9",
-			"request": {
-				"method": "DELETE",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:8080/orders/delete/9",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"orders",
-						"delete",
-						"9"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:8080/orders/update/7",
-			"request": {
-				"method": "PUT",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"orderName\":\"Laptop\",\n    \"customerName\":\"Mr.\",\n    \"customerSurname\": \"Robot\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:8080/orders/update/7",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"orders",
-						"update",
-						"7"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:8080/orders/8",
+			"name": "http://localhost:8080/api/orders/",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -102,13 +30,122 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/orders/8",
+					"raw": "http://localhost:8080/api/orders/",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"api",
+						"orders",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/orders/10",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/orders/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"orders",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/orders/9",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/orders/9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"orders",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/orders/8",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/orders/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
 						"orders",
 						"8"
 					]
@@ -117,45 +154,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/orders/all",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:8080/orders/all",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"orders",
-						"all"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:8080/orders/delete/5",
+			"name": "http://localhost:8080/api/orders/7",
 			"request": {
 				"method": "DELETE",
 				"header": [
@@ -175,97 +174,23 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/orders/delete/5",
+					"raw": "http://localhost:8080/api/orders/7",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"api",
 						"orders",
-						"delete",
-						"5"
+						"7"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/orders/all",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:8080/orders/all",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"orders",
-						"all"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:8080/orders/delete/4",
-			"request": {
-				"method": "DELETE",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:8080/orders/delete/4",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"orders",
-						"delete",
-						"4"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:8080/orders/update/4",
+			"name": "http://localhost:8080/api/orders/4",
 			"request": {
 				"method": "PUT",
 				"header": [
@@ -277,7 +202,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"orderName\":\"Scrubs\",\n    \"customerName\":\"Perry\",\n    \"customerSurname\":\"Cox\"\n}",
+					"raw": "{\n    \"orderName\":\"Vine\",\n    \"customerName\":\"Tyrion\",\n    \"customerSurname\":\"Lannister\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -285,15 +210,15 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/orders/update/4",
+					"raw": "http://localhost:8080/api/orders/4",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"api",
 						"orders",
-						"update",
 						"4"
 					]
 				}
@@ -301,7 +226,118 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/orders/add",
+			"name": "http://localhost:8080/api/orders/1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"orderName\":\"Vine\",\n    \"customerName\":\"Tyrion\",\n    \"customerSurname\":\"Lannister\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/orders/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"orders",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/orders/1",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"orderName\":\"List\",\n    \"customerName\":\"Aria\",\n    \"customerSurname\":\"Stark\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/orders/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"orders",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/orders/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/orders/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"orders",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/orders/",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -313,7 +349,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"orderName\":\"Pineapple\",\n    \"customerName\":\"Ted\",\n    \"customerSurname\":\"Mosby\"\n}",
+					"raw": "{\n    \"orderName\":\"Belt\",\n    \"customerName\":\"Raymond\",\n    \"customerSurname\":\"Holt\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -321,22 +357,23 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/orders/add",
+					"raw": "http://localhost:8080/api/orders/",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"api",
 						"orders",
-						"add"
+						""
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/orders/add",
+			"name": "http://localhost:8080/api/orders/",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -356,22 +393,23 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/orders/add",
+					"raw": "http://localhost:8080/api/orders/",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"api",
 						"orders",
-						"add"
+						""
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/orders/3",
+			"name": "http://localhost:8080/api/orders/4",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -394,13 +432,53 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/orders/3",
+					"raw": "http://localhost:8080/api/orders/4",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"api",
+						"orders",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/orders/3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/orders/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
 						"orders",
 						"3"
 					]
@@ -409,7 +487,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/orders/2",
+			"name": "http://localhost:8080/api/orders/1",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -432,51 +510,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/orders/2",
+					"raw": "http://localhost:8080/api/orders/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
-						"orders",
-						"2"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "http://localhost:8080/orders/1",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://localhost:8080/orders/1",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
+						"api",
 						"orders",
 						"1"
 					]
@@ -485,7 +526,7 @@
 			"response": []
 		},
 		{
-			"name": "http://localhost:8080/orders/all",
+			"name": "http://localhost:8080/api/orders/",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -508,15 +549,16 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/orders/all",
+					"raw": "http://localhost:8080/api/orders/",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"api",
 						"orders",
-						"all"
+						""
 					]
 				}
 			},
